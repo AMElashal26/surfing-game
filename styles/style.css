@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1e90ff, #00bfff);
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.game-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    max-height: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#gameCanvas {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #87CEEB, #1E90FF);
+    display: block;
+}
+
+.ui-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.score, .difficulty {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.controls {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.controls p {
+    margin: 5px 0;
+    color: #fff;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+canvas {
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    color: #666;
+    margin: 10px 0;
+} 
